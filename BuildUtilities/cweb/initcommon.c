@@ -1107,7 +1107,7 @@ void
  fatal(const char*s,const char*t)
 
 {
-if(*s)printf(s);
+if(*s)printf("%s", s);
 err_print(t);
 history= fatal_message;exit(wrap_up());
 }
